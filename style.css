@@ -70,6 +70,7 @@ a::selection {
 	border-bottom:solid white 2px;
 }
 .image-slider{
+	transition:  0.7s ease-in-out;
 	opacity: 0.90;
 	position: relative;
 	width: 100%;
@@ -78,6 +79,10 @@ a::selection {
 	background-size: cover;
 	background-position: center;
 	background-image: url(./images/img0.jpg);
+	-webkit-transition:  0.7s ease-in-out;
+	-moz-transition:  0.7s ease-in-out;
+	-ms-transition:  0.7s ease-in-out;
+	-o-transition:  0.7s ease-in-out;
 }
 .image-changer{
 	font-size: large;
@@ -126,6 +131,7 @@ a::selection {
 	-o-transform: translate(-50%,-50%);
 }
 button{
+	cursor: pointer;
 	color:transparent;
 	text-shadow: 0 0 0 rgb(228, 228, 228);
 	background-color: transparent;
@@ -139,7 +145,7 @@ button{
 }
 button:hover{
 	color: transparent;
-  	text-shadow: 0 0 0 rgb(255, 38, 38);
+  	text-shadow: 0 0 0 rgb(47, 45, 45);
 }
 
 
