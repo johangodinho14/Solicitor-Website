@@ -1,8 +1,6 @@
 const imageSlider = ()=>{
     let backgroundImage = document.getElementById('imageSlider');
-
         let i     = 0;
-
         setInterval(()=>{
             backgroundImage.style.backgroundImage = "url(./images/img"+i+".jpg)";
             i+=1;
@@ -11,7 +9,10 @@ const imageSlider = ()=>{
                 return;
             }
         },3000);
-    
+}
+const imageSliderButton = (image)=>{
+    let backgroundImage = document.getElementById('imageSlider');
+    backgroundImage.style.backgroundImage = "url(./images/img"+image+".jpg)";
 }
 
 window.addEventListener("load",()=>{

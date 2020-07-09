@@ -115,6 +115,8 @@ a::selection {
 }
 .home-header-text{
 	width: 100%;
+	margin-block-start: 0;
+	margin-block-end: 0;
 	position: absolute;
 	padding-top: 10%;
 	font-size: large;
@@ -162,11 +164,9 @@ button:hover{
 	.navbar a{
 		font-size: medium;
 	}
-	.home-header{
-		padding-bottom: 10%;
-	}
 	.home-header-text{
 		font-size: medium;
+		padding-top: 20%;
 	}
 	.image-changer{
 		font-size: small;
@@ -176,9 +176,7 @@ button:hover{
 	.navbar a{
 		font-size: x-small;
 	}
-	.home-header{
-		padding-bottom: 10%;
-	}
+
 	.home-header-text{
 		font-size: x-small;
 	}
