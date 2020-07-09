@@ -43,6 +43,10 @@ a::selection {
 	background-color: black;
 	opacity: 0.9;
 }
+.navbar-container .logo{
+	float: right;
+	width: 70px;
+}
 .navbar{
 	position: absolute;
 	top: 50%;
@@ -171,16 +175,21 @@ button:hover{
 	.image-changer{
 		font-size: small;
 	}
+	.navbar-container .logo{
+		width: 50px;
+	}
 }
 @media screen and (max-width:500px){
 	.navbar a{
 		font-size: x-small;
 	}
-
 	.home-header-text{
 		font-size: x-small;
 	}
 	.image-changer{
 		font-size: 1px;
+	}
+	.navbar-container .logo{
+		width: 40px;
 	}
 }
