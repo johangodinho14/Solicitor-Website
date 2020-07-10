@@ -13,6 +13,10 @@ body, html{
 	animation:fadeInAnimation 1s ease;
 	-webkit-animation:fadeInAnimation 1s ease;
 }
+body::after{
+	display:none;
+ 	content: url(./images/img0.jpg) url(./images/img1.jpg) url(./images/img2.jpg);
+}
 .img{
     outline: none;
     border:none;
