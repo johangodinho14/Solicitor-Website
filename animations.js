@@ -14,7 +14,6 @@ const imageSliderButton = (image)=>{
     let backgroundImage = document.getElementById('imageSlider');
     backgroundImage.style.backgroundImage = "url(./images/img"+image+".jpg)";
 }
-
 window.addEventListener("load",()=>{
     imageSlider();
 });
