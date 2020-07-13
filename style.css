@@ -6,7 +6,6 @@
 		opacity: 1;
 	}
 }
-
 /* General Styles */
 body, html{
 	background-color: #E3E2E4;
@@ -57,14 +56,14 @@ h2{
 	font-family: 'Trebuchet MS', sans-serif;
 	font-size: x-large;
 }
+h1{
+	font-family: 'Lora', serif; 
+}
 
 /* Homepage */
-.home{
-	height: 100vh;
-}
 .navbar-container{
 	position: fixed;
-	z-index: 1;
+	z-index: 5;
 	width: 100%;
 	height: 70px;
 	background-color: black;
@@ -145,7 +144,7 @@ h2{
 	margin-block-start: 0;
 	margin-block-end: 0;
 }
-.home-header-text{
+.home-header-text, .about-header-text{
 	width: 100%;
 	margin-block-start: 0;
 	margin-block-end: 0;
@@ -169,7 +168,7 @@ h2{
 	width:100%;
 	height:40vh;
 }
-.home-container-footer .box{
+ .box{
 	display: block;
 	width: 30%;
 	background-color: whitesmoke;
@@ -197,7 +196,7 @@ h2{
 .box-text p{
 	font-family: calibri;
 }
-.home-container-footer .box-center{
+.box-center{
 	position: absolute;
 	z-index: 1;
 	left: 50%;
@@ -206,12 +205,12 @@ h2{
 	margin:0 auto;
 	padding-bottom: 35px;
 }
-.home-container-footer .box-left{
+.box-left{
 	position: absolute;
 	left: 5%;
 	padding-bottom: 25px;
 }
-.home-container-footer .box-right{
+ .box-right{
 	position:absolute;
 	right:5%;
 	padding-bottom: 25px;
@@ -224,14 +223,107 @@ h2{
 }
 /* About page */
 .about{
+	position: relative;
 	width: 100%;
-	height: 100%;
 }
+.about-content{
+	width: 100%;
+	height: 50vh;
+	position: relative;
+}
+.about-header{
+	z-index: 2;
+	position: relative;
+	transition:  0.7s ease-in-out;
+	width: 100%;
+	height: 40vh;
+	overflow:hidden;
+	background-size: cover;
+	background-position: center;
+	background-image: url(./images/about-background.png);
+	-webkit-transition:  0.7s ease-in-out;
+	-moz-transition:  0.7s ease-in-out;
+	-ms-transition:  0.7s ease-in-out;
+	-o-transition:  0.7s ease-in-out;
+}
+.about-header h1{
+	margin: 0;
+	padding: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	opacity: 0.92;
+	font-size:8vw;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+}
+.about .box{
+	padding: 15px;
+	margin-left: 10px;
+	padding-bottom: 30px;
+}
+.about-box-left {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+.about-box-center{
+	display: inline-block;
+	margin-bottom: 15px;
 
-
+}
+.about-box-right{
+	display: inline-block;
+}
+.about .box-container{
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+	font-size: large;
+	font-family: calibri;
+	
+}
+.about .box-text{
+	padding-top: 5px;
+	text-align: left;
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+.about .box-container img{
+	width: 50%;
+}
+.commitmentImg{
+	width: 80%  !important;
+}
+.about-logo-section{
+	padding-top: 15px;
+	position: relative;
+}
+.about .logo{
+	width: 10%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+}
+.about .circle{
+	width: 20%;
+	display: block;
+	margin: 0 auto;
+}
 /* Media Queries */
 @media screen and (min-width:1200px){
-	.home-header{
+	.home-header, .about-header h1{
 		font-size: 90px;
 	}
 	.image-changer{
@@ -243,12 +335,18 @@ h2{
 	.box-text .user-image{
 		width: 80px;
 	}
+	.about .circle{
+		width: 200px;
+	}
+	.about .logo{
+		width: 150px;
+	}
 }
 @media screen and (max-width:1300px){
 	.navbar a{
 		font-size: medium;
 	}
-	.home-header-text{
+	.home-header-text, .about-header-text{
 		font-size: medium;
 		padding-top: 20%;
 	}
@@ -264,12 +362,19 @@ h2{
 	.home-container-footer .box-text{
 		font-size: medium;
 	}
+	.about .box-container{
+		font-size: medium;
+	}
+	.about-logo-section{
+		position: relative;
+	}
+	
 }
 @media screen and (max-width:500px){
 	.navbar a{
 		font-size: x-small;
 	}
-	.home-header-text{
+	.home-header-text, .about-header-text{
 		font-size: x-small;
 	}
 	.image-changer{
@@ -290,4 +395,11 @@ h2{
 	.home-container-footer .box-right{
 		right:3%;
 	}
+	.about .box-container{
+		font-size: x-small;
+	}
+	.about-box-left, .about-box-center, .about-box-right{
+		width: 60%;
+	}
+	
 }
