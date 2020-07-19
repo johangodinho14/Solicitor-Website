@@ -125,15 +125,13 @@
 			<div class="contact-form-container box">
 				<h2>Leave a message</h2>
 				<div class="contact-form">
-					<form method="post">
-						<input type="text" placeholder="Name"></br>
-						<input type="text" placeholder="Email"></br>
-						<input type="text" placeholder="Phone"></br>
-						<input type="text" placeholder="Address"></br>
-						<input type="text" placeholder="Subject"></br>
-						<textarea  placeholder="Message"></textarea></br>
-						<input class="send-button" type="submit" value="Send"></br>
-					</form>
+						<input type="text" placeholder="Name" 	id="name"></br>
+						<input type="text" placeholder="Email"	id="email" ></br>
+						<input type="text" placeholder="Phone"	id="phone"></br>
+						<input type="text" placeholder="Address"id="address"></br>
+						<input type="text" placeholder="Subject"id="subject"></br>
+						<textarea  placeholder="Message"		id="message"></textarea></br>
+						<input id = "sendEmail" class="send-button" type="submit" value="Send"></br>
 				</div>
 			</div>
 			<div class="contact-content-container box">
@@ -160,6 +158,7 @@
 		
 	</section>
 	
+	<script src="https://smtpjs.com/v3/smtp.js"></script>  
 	<script src="animations.js"></script>
 
 </body>
